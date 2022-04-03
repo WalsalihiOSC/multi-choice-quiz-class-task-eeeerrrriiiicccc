@@ -29,8 +29,6 @@ class GUI:
                 Radiobutton(f1, text=i, value=i, variable=self.result, command=self.display_result).grid(column=1, row=r, sticky=W)
                 r += 1
 
-          
-
             self.output_label = Label(parent, text=self.result.get())
             self.output_label.pack()
 
