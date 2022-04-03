@@ -17,6 +17,7 @@ class GUI:
             self.result.set("")
 
             f1 = Frame(parent)
+            f1.pack()
 
             Label(f1, text="Question:     ").grid(column=0)
             Label(f1, text="What is the capital of Jamaica?").grid(column=1, row=0)
@@ -28,7 +29,7 @@ class GUI:
                 Radiobutton(f1, text=i, value=i, variable=self.result, command=self.display_result).grid(column=1, row=r, sticky=W)
                 r += 1
 
-            f1.pack()
+          
 
             self.output_label = Label(parent, text=self.result.get())
             self.output_label.pack()
